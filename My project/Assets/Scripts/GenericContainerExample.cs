@@ -32,15 +32,15 @@ public class GenericContainerExample : MonoBehaviour
     {//생성한 컨테이너를 Debug.Log에서 볼 수 있게 만든 함수
         T[] items = container.GetItems();
         string temp = "";
-        for(int i = 0; i < items.Length; i++)
+        for(int i = 0; i < items.Length; i++)                           //컨테이너를 순환해서 배열값을 문자열로 변환
         {
             if (items[i] != null)
             {
-                temp += items[i].ToString() + " -  ";
+                temp += items[i].ToString() + " -  ";               //제너릭 형태값를 String 으로 변환
             }
             else
             {
-                temp += "Empty -";
+                temp += "Empty -";                                      //비어있으면 Empty 문자열
             }
         }
         Debug.Log(temp);
