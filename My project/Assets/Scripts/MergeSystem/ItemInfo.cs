@@ -9,7 +9,7 @@ public class ItemInfo : MonoBehaviour
 
     public void InitDummy(int slotId, int itemId)
     {//인수로 받은 값을들 Class 쪽에 입력
-        this.slotId = slotId;
-        this.itemId = itemId;
+       this.slotId = slotId;
+       this.itemId = itemId;   
     }
 }

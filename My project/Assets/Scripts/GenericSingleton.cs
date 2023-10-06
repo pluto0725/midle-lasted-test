@@ -9,7 +9,7 @@ public class GenericSingleton<T> : MonoBehaviour where T : Component
     {
         get
         {
-            if (_instance == null)               //인스턴스가 없을경우
+            if(_instance == null)               //인스턴스가 없을경우
             {
                 _instance = FindObjectOfType<T>(); //클래스 타입 찾는다.
                 if (_instance == null)

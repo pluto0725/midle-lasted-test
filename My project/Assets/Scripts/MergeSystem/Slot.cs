@@ -21,10 +21,10 @@ public class Slot : MonoBehaviour
         Destroy(itemObject.gameObject); //기존 아이템을 삭제
         ChangeStateTo(SLOTSTATE.EMPTY); //슬롯은 빈 상태
     }
-    public void CreateItem(int id)
+    public void CreateItem(int  id)
     {
         //아이템 경로는 (Resources/Prefabs/Item_000)
-        string itemPath = "Prefabs/Item_" + id.ToString("000");
+        string itemPath = "Prefabs/Item_" + id.ToString("000"); 
         var itemGo = (GameObject)Instantiate(Resources.Load(itemPath));
         itemGo.transform.SetParent(this.transform);
         itemGo.transform.localPosition = Vector3.zero;
